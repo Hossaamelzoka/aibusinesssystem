@@ -789,6 +789,84 @@ header .logo span{
   .whatsapp-sticky svg{width:22px;height:22px;flex-basis:22px}
 }
 </style>
+
+<style id="mobile-heading-final-fix">
+@media (max-width:760px){
+  /* Prevent highlighted Arabic headlines from colliding/overlapping */
+  .reframe .section-head,
+  .ai .section-head,
+  .offer-section .section-head{
+    width:100%;
+    max-width:100%;
+    margin:0 auto 34px !important;
+    padding:0 12px !important;
+    box-sizing:border-box;
+  }
+
+  .reframe .section-head h2,
+  .ai .section-head h2,
+  .offer-section .section-head h2{
+    display:block !important;
+    width:100% !important;
+    margin:0 !important;
+    padding:0 !important;
+    font-size:clamp(27px,8vw,36px) !important;
+    line-height:1.55 !important;
+    overflow:visible !important;
+    word-break:normal !important;
+    overflow-wrap:anywhere !important;
+  }
+
+  .reframe .section-head h2 mark,
+  .ai .section-head h2 mark,
+  .offer-section .section-head h2 mark{
+    display:block !important;
+    width:fit-content !important;
+    max-width:100% !important;
+    box-sizing:border-box !important;
+    margin:14px auto 0 !important;
+    padding:5px 12px !important;
+    line-height:1.5 !important;
+    white-space:normal !important;
+    vertical-align:middle !important;
+  }
+
+  .reframe .section-head p,
+  .ai .section-head p,
+  .offer-section .section-head p{
+    display:block !important;
+    margin:20px auto 0 !important;
+    line-height:1.9 !important;
+    position:relative !important;
+    clear:both !important;
+  }
+
+  .timeline-head{
+    text-align:center !important;
+  }
+
+  .timeline-head h3.yellow-highlight{
+    display:block !important;
+    width:fit-content !important;
+    max-width:100% !important;
+    box-sizing:border-box !important;
+    margin:0 auto 18px !important;
+    padding:8px 12px !important;
+    font-size:clamp(24px,7vw,34px) !important;
+    line-height:1.45 !important;
+    white-space:normal !important;
+  }
+
+  .reframe,
+  .ai{
+    height:auto !important;
+    min-height:0 !important;
+    overflow:visible !important;
+    padding-top:72px !important;
+    padding-bottom:72px !important;
+  }
+}
+</style>
 </head>
 <body>
 <div class="grain"></div>
